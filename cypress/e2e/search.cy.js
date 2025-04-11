@@ -5,8 +5,7 @@ describe('Filtragem de produtos', () => {
         cy.login();
     });
 
-    it.only('Deve filtrar produtos por preço (alto para baixo)', () => {
-        cy.wait(2000);
+    it('Deve filtrar produtos por preço (alto para baixo)', () => {
         cy.get('[data-test="product_sort_container"]').should('be.visible').select('hilo');
     
         cy.get('.inventory_item_price')
