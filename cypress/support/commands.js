@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-
+/// Custom command to login
 Cypress.Commands.add('login', () => {
     cy.visit('/');
     cy.get('[data-test="username"]').type('standard_user');

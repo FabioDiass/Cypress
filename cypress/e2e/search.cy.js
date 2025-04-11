@@ -1,7 +1,7 @@
 describe('Filtragem de produtos', () => {
 
     beforeEach(() => {
-        // Login
+        // Login antes de cada teste
         cy.login();
     });
 

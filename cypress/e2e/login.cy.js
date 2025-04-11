@@ -1,6 +1,7 @@
 describe('Login Tests', () => {
     
     it('Login com sucesso', () => {
+        // Acessar a página de login
         cy.visit('https://www.saucedemo.com/');
         cy.get('[data-test="username"]').type('standard_user');
         cy.get('[data-test="password"]').type('secret_sauce');

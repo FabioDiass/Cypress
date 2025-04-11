@@ -17,6 +17,7 @@
 import './commands'
 import './e2e'
 
+// Alternatively you can use CommonJS syntax:
 Cypress.on('uncaught:exception', (err, runnable) => {
     if (err.message.includes('https://events.backtrace.io')) {
       return false;
